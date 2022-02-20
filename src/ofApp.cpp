@@ -2,7 +2,12 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	ofBackground(255);
+	ofEnableAlphaBlending();
+	ofSetCircleResolution(32);
 
+	color = glm::vec3(0, 100, 255);
+	location = glm::vec2(ofGetWidth() / 2, ofGetHeight() / 2);
 }
 
 //--------------------------------------------------------------
@@ -12,7 +17,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+	ofSetColor(color.x, color.y, color.z, 127);
+	ofDrawCircle(location.x, location.y, 20);
 }
 
 //--------------------------------------------------------------
