@@ -20,5 +20,8 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+		glm::vec3 color;
+		glm::vec2 location;
 		
 };
